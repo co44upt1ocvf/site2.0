@@ -1,0 +1,230 @@
+html{
+    margin: auto;
+    overflow: auto;
+    background: linear-gradient(315deg, rgb(12, 0, 0) 3%, rgb(189, 115, 115) 28%, rgb(128, 40, 40) 68%, rgba(12, 0, 0) 92%);
+    animation: gradient 15s ease infinite;
+    background-size: 350% 350%;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.10em;
+    text-align: justify;
+    color:#ffffff
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+.wave {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+body{
+    margin-top: 8%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 8%;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.main_body{
+    background: rgb(27, 27, 27);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: flex;
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: auto;
+    height: auto;
+    display: flex;
+    background: rgb(27, 27, 27);
+    overflow: hidden;
+}
+.LOGO{
+    height: auto;
+    margin: 0.50em 2em;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.zsvh{
+
+    width: 3.25em;
+    height: 3.25em;
+    border-radius: 3.25em;
+}
+.name_site{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-right: 2.50em;
+    height: 100%;
+    width: auto;
+}
+.name_site p {
+    margin: auto 0.50em;
+    color: #000000;
+    font-size: 1.85em;
+}
+.links{
+    height: auto;
+    margin-left: auto;
+    margin-right: 2.50em;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.vk, .tg{
+    width: 2.25em;
+    height: 2.25em;
+    margin-right: 2.25em;
+}
+.kart{
+    width: 4.50em;
+    height: 2.25em;
+}
+.attention{
+	background-color: #da3240;
+	width: 100%;
+	height: 6.25em;
+}
+.news{
+    font-size: 5.50em;
+    position: absolute;
+    overflow: hidden;
+    margin-right: 4%;
+}
+.fresh_content{
+    margin: 4em 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+.triggers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #ffffff;
+    align-items: center;
+    margin: 0;
+}
+.triggers a{
+    margin-left: 1.50em;
+    margin-right: 1.50em;
+}
+a{
+    color:rgb(44, 0, 0);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+a:link{
+    color:rgb(44, 0, 0);
+}
+a:visited{
+    color:rgb(44, 0, 0);
+}
+a:hover{
+    color: #da3240;
+}
+.primary_header{
+    margin: 0;
+    margin-right: 1em;
+    font-size: 6.25em;
+}
+.actual_news{
+    margin-bottom: 0;
+}
+.main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.posts{
+    width: 33%;
+    height: auto;
+    margin: 4em 2em;
+    display: flex;
+    flex-direction: column;
+}
+.textBox{
+    width: 33%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+    margin-right: 2em;
+}
+.theme{
+    font-size: 1.25em;
+}
+.photo{
+    display: flex;
+    aspect-ratio: 9/16;
+    max-width: 90%;
+    margin-top: 4em;
+    margin-right: 2em;
+    border-radius: 3.50em;
+}
+.RPG{
+    display: flex;
+    flex-direction: column;
+    margin-top: -8em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 4em;
+    width: 64%;
+}
